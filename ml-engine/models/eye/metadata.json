@@ -1,0 +1,181 @@
+{
+  "architecture_version": "1.0",
+  "kind": "eye",
+  "feature_dimensions": 24,
+  "feature_ordering": "left then right eye; six contour points (outer, upper1, upper2, inner, lower1, lower2), xy eye-relative",
+  "normalization": "subtract eye outer corner; divide by outer-inner corner distance",
+  "labels": [
+    "open",
+    "closed"
+  ],
+  "label_mapping": {
+    "open": 0,
+    "closed": 1
+  },
+  "preprocessing": {
+    "method": "standardize",
+    "fit_scope": "training_split_only",
+    "fit_sessions": [
+      "97262dec-237f-4b5f-acc3-174ffddc3271"
+    ],
+    "mean": [
+      0.0,
+      0.0,
+      0.25452888011932373,
+      -0.10936275124549866,
+      0.625058114528656,
+      -0.15620538592338562,
+      0.9968360066413879,
+      0.012381326407194138,
+      0.7104672193527222,
+      0.1063787192106247,
+      0.3430487811565399,
+      0.16007308661937714,
+      0.0,
+      0.0,
+      0.37165215611457825,
+      -0.25755003094673157,
+      0.7524296045303345,
+      -0.2618262767791748,
+      0.9812542796134949,
+      -0.17918209731578827,
+      0.6799033284187317,
+      0.05522754415869713,
+      0.2971271276473999,
+      0.061282072216272354
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      0.0439000129699707,
+      0.10689801722764969,
+      0.029798045754432678,
+      0.1082882210612297,
+      0.0029295366257429123,
+      0.0784609317779541,
+      0.006277744192630053,
+      0.06854743510484695,
+      0.006420925725251436,
+      0.054728586226701736,
+      1.0,
+      1.0,
+      0.01665431261062622,
+      0.1566823422908783,
+      0.029875775799155235,
+      0.1630319356918335,
+      0.013106491416692734,
+      0.0697280615568161,
+      0.010115920566022396,
+      0.029481125995516777,
+      0.009934991598129272,
+      0.020106613636016846
+    ],
+    "zero_variance_features": [
+      0,
+      1,
+      12,
+      13
+    ]
+  },
+  "split_protocol": "training_session_internal_validation_and_heldout_session_test",
+  "training": {
+    "run_id": "20261118T043457485080Z",
+    "epochs_requested": 50,
+    "epochs_completed": 50,
+    "batch_size": 64,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "seed": 7,
+    "device": "cuda",
+    "early_stopping_patience": 8,
+    "validation_fraction_of_training_session": 0.2
+  },
+  "dataset": {
+    "path": "ml-engine\\data\\processed\\eyes\\eye_train_session01_02.csv",
+    "rows": 625,
+    "version": 1
+  },
+  "splits": {
+    "train": {
+      "rows": 256,
+      "sessions": [
+        "97262dec-237f-4b5f-acc3-174ffddc3271"
+      ]
+    },
+    "validation": {
+      "rows": 65,
+      "sessions": [
+        "97262dec-237f-4b5f-acc3-174ffddc3271"
+      ]
+    },
+    "test": {
+      "rows": 304,
+      "sessions": [
+        "eye-session-02"
+      ]
+    }
+  },
+  "torch_version": "2.11.0+cu128",
+  "metrics": {
+    "accuracy": 0.7631578947368421,
+    "macro_precision": 0.7631954968607924,
+    "macro_recall": 0.763104358741289,
+    "macro_f1": 0.7631168831168831,
+    "per_class": {
+      "open": {
+        "precision": 0.7612903225806451,
+        "recall": 0.7712418300653595,
+        "f1": 0.7662337662337663,
+        "support": 153
+      },
+      "closed": {
+        "precision": 0.7651006711409396,
+        "recall": 0.7549668874172185,
+        "f1": 0.76,
+        "support": 151
+      }
+    },
+    "confusion_matrix": [
+      [
+        118,
+        35
+      ],
+      [
+        37,
+        114
+      ]
+    ],
+    "mean_batch_inference_latency_ms_per_sample": 0.0023608552623954893,
+    "parameter_count": 3746,
+    "test_samples": 304,
+    "validation_samples": 65,
+    "classification_report": {
+      "open": {
+        "precision": 0.7612903225806451,
+        "recall": 0.7712418300653595,
+        "f1-score": 0.7662337662337663,
+        "support": 153.0
+      },
+      "closed": {
+        "precision": 0.7651006711409396,
+        "recall": 0.7549668874172185,
+        "f1-score": 0.76,
+        "support": 151.0
+      },
+      "accuracy": 0.7631578947368421,
+      "macro avg": {
+        "precision": 0.7631954968607924,
+        "recall": 0.763104358741289,
+        "f1-score": 0.7631168831168831,
+        "support": 304.0
+      },
+      "weighted avg": {
+        "precision": 0.7631829628194756,
+        "recall": 0.7631578947368421,
+        "f1-score": 0.7631373889268626,
+        "support": 304.0
+      }
+    }
+  },
+  "created_at": "2026-11-18T04:34:58.550518+00:00"
+}

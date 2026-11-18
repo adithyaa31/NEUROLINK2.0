@@ -1,0 +1,23 @@
+{
+  "kind": "eye",
+  "rows": 904,
+  "features": 24,
+  "classes": [
+    "open",
+    "closed"
+  ],
+  "class_counts": {
+    "open": 474,
+    "closed": 430
+  },
+  "sessions": 3,
+  "samples_per_session": {
+    "97262dec-237f-4b5f-acc3-174ffddc3271": 321,
+    "eye-session-02": 304,
+    "eye-session-03": 279
+  },
+  "duplicate_feature_rows": 0,
+  "invalid_values": 0,
+  "feature_min": -0.5695445537567139,
+  "feature_max": 1.0
+}

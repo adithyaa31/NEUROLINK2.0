@@ -1,0 +1,29 @@
+{
+  "source": "Google MediaPipe model storage (mediapipe-models bucket)",
+  "runtime": {
+    "python_package": "mediapipe 1.2.3",
+    "task_bundle_format": "MediaPipe Tasks .task",
+    "variant": "float16",
+    "model_version": "1"
+  },
+  "assets": {
+    "gesture": {
+      "file": "hand_landmarker.task",
+      "object": "hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+      "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+      "size_bytes": 7819105,
+      "md5_base64": "FTGEMOo4UWcP6ZFBFqnPrQ==",
+      "sha256": "FBC2A30080C3C557093B5DDFC334698132EB341044CCEE322CCF8BCF3607CDE1",
+      "generation": "1682480004222387"
+    },
+    "eye": {
+      "file": "face_landmarker.task",
+      "object": "face_landmarker/face_landmarker/float16/1/face_landmarker.task",
+      "url": "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task",
+      "size_bytes": 3758596,
+      "md5_base64": "sOcnSQehZEQE/vZrKN1thQ==",
+      "sha256": "64184E229B263107BC2B804C6625DB1341FF2BB731874B0BCC2FE6544E0BC9FF",
+      "generation": "1683136941916318"
+    }
+  }
+}

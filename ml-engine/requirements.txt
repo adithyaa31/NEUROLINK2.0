@@ -1,0 +1,14 @@
+# Install PyTorch separately from https://pytorch.org/get-started/locally/
+# using its Windows/Pip/Python/CUDA selector for the selected Python 3.11 setup.
+fastapi>=0.115
+uvicorn[standard]>=0.32
+pydantic>=2.10
+httpx>=0.28
+opencv-python>=4.10
+mediapipe>=0.10
+numpy>=2.1
+pandas>=2.2
+scikit-learn>=1.6
+matplotlib>=3.9
+pillow>=10.4
+pytest>=8.3

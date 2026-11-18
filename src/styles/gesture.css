@@ -1,0 +1,14 @@
+.gesture-workspace{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(290px,.8fr);gap:15px;align-items:start}
+.gesture-view{position:relative;isolation:isolate}
+.gesture-view video,.gesture-view canvas{position:absolute;inset:0;width:100%;height:100%}
+.gesture-view video{z-index:0;object-fit:cover;transform:scaleX(-1)}
+.gesture-view video.video-hidden{display:none}
+.gesture-view .landmark-canvas{z-index:1;pointer-events:none;transform:scaleX(-1)}
+.gesture-view .camera-placeholder,.gesture-view .view-corner{z-index:2}
+.gesture-states{display:flex;flex-wrap:wrap;gap:14px;margin-top:12px;padding-top:11px;border-top:1px solid rgba(165,190,230,.08);color:#8494ad;font:9px 'JetBrains Mono',monospace}
+.gesture-states span{display:flex;align-items:center;gap:6px}
+.gesture-cursor{position:fixed;z-index:20;color:#00E5FF;filter:drop-shadow(0 0 6px rgba(0,229,255,.9));pointer-events:none;transform:translate(-2px,-2px)}
+.gesture-workspace .stack{min-width:0}
+.gesture-workspace .camera-controls{flex-wrap:wrap}
+@media(max-width:1100px){.gesture-workspace{grid-template-columns:1fr}.gesture-workspace .stack{display:grid;grid-template-columns:1fr 1fr}.gesture-workspace .stack>.card:last-child{grid-column:1/-1}}
+@media(max-width:760px){.gesture-workspace .stack{display:flex}.gesture-workspace .stack>.card:last-child{grid-column:auto}}

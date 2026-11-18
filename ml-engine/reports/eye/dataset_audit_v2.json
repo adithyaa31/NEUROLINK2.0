@@ -1,0 +1,25 @@
+{
+  "kind": "eye",
+  "source": "C:\\Users\\adith\\OneDrive\\Desktop\\NEUROLINK-2.0\\ml-engine\\data\\processed\\eyes\\eye_all_sessions.csv",
+  "rows": 904,
+  "feature_dimensions": 24,
+  "missing_values_by_column": {},
+  "non_numeric_or_nonfinite_feature_values": 0,
+  "unknown_labels": [],
+  "missing_classes": [],
+  "class_distribution": {
+    "open": 474,
+    "closed": 430
+  },
+  "session_count": 3,
+  "samples_per_session": {
+    "97262dec-237f-4b5f-acc3-174ffddc3271": 321,
+    "eye-session-02": 304,
+    "eye-session-03": 279
+  },
+  "duplicate_feature_rows": 0,
+  "outlier_values_abs_gt_10": 0,
+  "feature_min": -0.5695445537567139,
+  "feature_max": 1.0,
+  "valid": true
+}
